@@ -76,8 +76,6 @@ public class UsuariosController {
         fieldsToUpdate.setName(fieldsToUpdate.getName() == null ? usuariosModel.getName() : fieldsToUpdate.getName());
         fieldsToUpdate.setEmail(fieldsToUpdate.getEmail() == null ? usuariosModel.getEmail() : fieldsToUpdate.getEmail());
         fieldsToUpdate.setCpf(fieldsToUpdate.getCpf() == null ? usuariosModel.getCpf() : fieldsToUpdate.getCpf());
-        fieldsToUpdate.setPhone(fieldsToUpdate.getPhone() == null ? usuariosModel.getPhone() : fieldsToUpdate.getPhone());
-        fieldsToUpdate.setAddress(fieldsToUpdate.getAddress() == null ? usuariosModel.getAddress() : fieldsToUpdate.getAddress());
         // Ugly code area
         return this.usuariosRepository.save(fieldsToUpdate);
     }
